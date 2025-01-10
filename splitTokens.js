@@ -39,7 +39,6 @@ async function splitTokens(inputFilePath, outputDir) {
 
 // Configurar las rutas
 const inputFilePath = path.resolve(__dirname, "tokens.json"); // Archivo JSON en el mismo directorio
-const outputDir = __dirname; // Guardar los archivos en el mismo directorio
-
+const outputDir = path.resolve(__dirname, "./src/tokens");
 // Ejecutar la función
 splitTokens(inputFilePath, outputDir);

@@ -23,18 +23,21 @@ body{
   align-items: center;
   justify-content: center;
   gap: 0.5em;
-  border: 1px solid;
+  border: var.$semantic-default-medium;
   border-radius: 1em;
   padding: 2em;
   background-color: var.$semantic-background-default;
+  box-shadow: var.$semantic-shadow-high-emphasis;
 
   h3{
     font: var.$font-scale-subtitles-s;
+    color: var.$semantic-text-primary;
     box-sizing: border-box;
   }
 
   p{
-    font: var.$font-scale-paragraph-normal-m;
+    font: var.$font-scale-paragraph-normal-l;
+    color: var.$semantic-text-secondary;
     text-align: center;
   }
 
