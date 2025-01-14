@@ -32,6 +32,14 @@ npm install style-dictionary@latest @tokens-studio/sd-transforms sass
 
 ### Paso 5
 
+dentro del archivo package.json modificamos o agregamos el script que ejecuta style dicctionary para convertir los tokens.
+
+```console
+"build-tokens": "node build-tokens.js"
+```
+
+### Paso 6
+
 Ejecutamos el script que permite separar el archivo tokens.json en archivos independedientes
 
 ```console
