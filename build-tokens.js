@@ -6,8 +6,7 @@ import StyleDictionary from "style-dictionary";
 register(StyleDictionary);
 
 const sd = new StyleDictionary({
-  source: ["src/tokens/**/*.json"],
-
+  source: ["src/tokens/global.json", "src/tokens/Semantic.json"],
   log: {
     verbosity: "default",
   },
@@ -21,6 +20,7 @@ const sd = new StyleDictionary({
         {
           destination: "variables.css",
           format: "css/variables",
+          filter: (token) => token.filePath.includes("Semantic.json"), // Filtrar tokens de Semantic.json
         },
       ],
     },
@@ -32,6 +32,7 @@ const sd = new StyleDictionary({
         {
           destination: "variables.scss",
           format: "scss/variables",
+          filter: (token) => token.filePath.includes("Semantic.json"), // Filtrar tokens de Semantic.json
         },
       ],
     },
